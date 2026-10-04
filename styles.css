@@ -1,0 +1,258 @@
+:root {
+    --background: #0b1120;
+    --surface: #11a2e;
+    --surface-light: #18243c;
+    --primary: #5eead4;
+    --primary-dark: #2dd4bf;
+    --text: #f8fafc;
+    --muted: #a7b0c0;
+    --border: #293550;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 1100px;
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.navigation {
+    display: flex;
+    gap: 42px;
+}
+
+.navigation a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation a:hover {
+    color: var(--primary);
+}
+
+.hero {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 90px 30px;
+    display: grid;
+    grid-template-columns: 620px 360px;
+    gap: 60px;
+    align-items: center;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    max-width: 700px;
+    margin-bottom: 24px;
+    font-size: 3.5rem;
+    line-height: 1.00;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.hero-description {
+    max-width: 620px;
+    margin-bottom: 32px;
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 14px 22px;
+    background: var(--primary);
+    color: #07111d;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+    .primary-button:hover {
+        background: var(--primary-dark);
+    }
+
+.status-panel {
+    padding: 28px;
+    display: flex;
+    gap: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+    .status-panel p {
+        margin: 4px 0 0;
+        color: var(--muted);
+    }
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
+    flex-shrink: 0;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.services-section,
+.process-section,
+.contact-section {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+.section-heading {
+    margin-bottom: 36px;
+}
+
+.service-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.service-card {
+    width: 300px;
+    min-height: 220px;
+    padding: 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+    .service-card p {
+        color: var(--muted);
+    }
+
+.card-number {
+    display: inline-block;
+    margin-bottom: 36px;
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.process-section {
+    background: var(--surface);
+    border-radius: 12px;
+}
+
+.process-list {
+    padding-left: 24px;
+}
+
+    .process-list li {
+        margin-bottom: 14px;
+        padding-left: 10px;
+        color: var(--muted);
+    }
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 400px 560px;
+    gap: 60px;
+}
+
+    .contact-section > div > p:last-child {
+        color: var(--muted);
+    }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .contact-form label {
+        margin-bottom: 6px;
+        font-weight: 700;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 13px;
+        background: var(--surface);
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        font: inherit;
+    }
+
+    .contact-form button {
+        padding: 14px 20px;
+        background: var(--primary);
+        color: #07111d;
+        border: 0;
+        border-radius: 6px;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+        .contact-form button:hover {
+            background: var(--primary-dark);
+        }
+
+.form-message {
+    min-height: 24px;
+    margin-top: 14px;
+    color: var(--primary);
+}
+
+.site-footer {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 30px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+}

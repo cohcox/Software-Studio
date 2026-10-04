@@ -108,7 +108,7 @@
                 </p>
             </div>
 
-            <form class="contact-form" id="contact-form">
+            <form class="contact-form" id="contact-form" novalidate>
                 <label for="name">Name</label>
                 <input id="name" name="name" type="text"/>
 
@@ -116,11 +116,11 @@
                 <input id="email" name="email" type="email"/>
 
                 <label for="description">Problem description</label>
-                <textures id="description" name="description" rows="5"></textures>
+                <textarea id="description" name="description" rows="5"></textarea>
 
                 <button type="submit">Submit Request</button>
 
-                <p class="form-message" id="form-message"></p>
+                <p class="form-message" id="form-message" aria-live="polite"></p>
             </form>
         </section>
     </main>

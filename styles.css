@@ -257,6 +257,14 @@ h2 {
     border-top: 1px solid var(--border);
 }
 
+.form-message.success {
+    color: #5eead4;
+}
+
+.form-message.error {
+    color: #fca5a5;
+}
+
 @media (max-width: 760px) {
     .site-header {
         padding: 20px;
